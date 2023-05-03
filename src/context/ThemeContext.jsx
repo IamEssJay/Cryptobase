@@ -21,7 +21,7 @@ export const ThemeContext =createContext()
 export const ThemeProvider =({initialTheme,children})=>{
     const [theme,setTheme]=useState(getInitialTheme)
 
-    const rawSetTheme= ()=>{
+    const rawSetTheme= (theme)=>{
         const root=window.document.documentElement;
         const isDark= theme ==='dark'
 
