@@ -1,9 +1,9 @@
 import React from 'react'
 
-const accounts = () => {
+const Accounts = () => {
   return (
-    <div>accounts</div>
+    <div>Accounts</div>
   )
 }
 
-export default accounts
+export default Accounts
