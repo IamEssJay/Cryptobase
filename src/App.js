@@ -5,7 +5,7 @@ import { ThemeProvider } from './context/ThemeContext';
 import Home from './Pages/Home';
 import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
-import accounts from './Pages/accounts';
+import Accounts from './Pages/Accounts';
 
 function App() {
   return <ThemeProvider>
@@ -14,7 +14,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/Accounts' element={<Accounts/>}/>
     </Routes>
   </ThemeProvider>
 }
