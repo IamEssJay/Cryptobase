@@ -1,10 +1,10 @@
 import React from 'react'
 import Search from '../components/Search'
 
-const Home = () => {
+const Home = ({coins}) => {
   return (
     <div>
-      <Search/>
+      <Search coins={coins}/>
     </div>
   )
 }
