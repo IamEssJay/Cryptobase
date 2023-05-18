@@ -7,6 +7,7 @@ import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
 import Accounts from './Pages/Accounts';
 import axios from 'axios';
+import CoinsPage from './Pages/CoinsPage';
 
 function App() {
   const [coins, setCoins]= useState([])
@@ -27,6 +28,9 @@ function App() {
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/Accounts' element={<Accounts/>}/>
+      <Route path='/coin/:coinId' element={<CoinsPage/>}>
+        <Route path=':coinId'/>
+      </Route>
     </Routes>
   </ThemeProvider>
 }
