@@ -10,7 +10,6 @@ const Trending = () => {
     useEffect(() => {
         axios.get(url).then((response)=>{
             setTrending(response.data.coins)
-            console.log(response.data.coins)
         })
       
     }, [url])
