@@ -5,10 +5,10 @@ import { ThemeProvider } from './context/ThemeContext';
 import Home from './Pages/Home';
 import Signin from './Pages/Signin';
 import Signup from './Pages/Signup';
-import Accounts from './Pages/Accounts';
 import axios from 'axios';
 import CoinsPage from './Pages/CoinsPage';
 import Footer from './components/Footer';
+import Accounts from './Pages/Accounts';
 
 function App() {
   const [coins, setCoins]= useState([])
@@ -28,7 +28,7 @@ function App() {
       <Route path='/' element={<Home coins={coins}/>}/>
       <Route path='/signin' element={<Signin/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      {/* <Route path='/Accounts' element={<Accounts/>}/> */}
+      <Route path='/Accounts' element={<Accounts/>}/>
       <Route path='/coin/:coinId' element={<CoinsPage/>}>
         <Route path=':coinId'/>
       </Route>
